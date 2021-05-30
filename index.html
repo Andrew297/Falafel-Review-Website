@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edinburgh Falafel Reviews</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <img id="logo" src="img/falafel.png" alt="falafel icon">
+    <h1 id=title>Edinburgh Falafel Review</h1>
+  </header>
+  <main>
+    <p>
+      Hello and welcome to my list of the best falafel in Edinburgh! Use the markers on the map to navigate to a review of the shop or read about my favourite
+      <a href="#review_1">here</a>.
+    </p>
+    <p>
+      Feel free to get in contact with any suggestions or a review of your favourite shop using the
+      <a href="#form">form</a>
+      at the bottom.
+    </p>
+  </main>
+  <div id="map"></div>
+
+  <div class="reviews">
+    <h1>Reviews</h1>
+    <div class="review" id="review_1">
+      <h2 class="review_header">Yum Yum Kurdish Kebab House</h2>
+      <div class="review_content">
+        <p>My current favourite place to get falafel in Edinburgh. Great wrap and salad - a particular highlight being the spicy onions. Various different combinations are available - baba ghanoush and hummus as well as lots of roasted vegetables are options on the menu. The base pricing of £5.50 is reasonable.</p>
+        <p>Score: 9/10</p>
+      </div>
+      <img class="review_image" src="img/yumyum.png" alt="falafel icon">
+    </div>
+    <div class="review" id="review_2">
+      <h2 class="review_header">Turkish Doner Inn</h2>
+      <div class="review_content">
+        <p>Hello this is the second review</p>
+        <p>Score: 9/10</p>
+      </div>
+      <img class="review_image" src="img/yumyum.png" alt="falafel icon">
+    </div>
+    <div class="review" id="review_3">
+      <h2 class="review_header">The Shawarma House</h2>
+      <div class="review_content">
+        <p>Hello this is the third review</p>
+        <p>Score: 9/10</p>
+      </div>
+    </div>
+  </div>
+
+  <form id="form" action="https://getform.io/f/81ab8377-9899-4e69-8648-80dbd110aec9" method="POST">
+    <h1>Contact Form</h1>
+    <input id="email" type="email" name="email" placeholder="Enter your email address" required="required">
+    <textarea id="message" type="text" name="message" placeholder="Enter your message" required="required"cols="30" rows="10"></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <footer>
+    <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  </footer>
+
+  <script src=js/map.js></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5QOGtSApcoa0zDSg0Nmh0pOK_iCJkQTA&callback=initMap&libraries=&v=weekly"
+      async>
+  </script>
+</body>
+</html>
